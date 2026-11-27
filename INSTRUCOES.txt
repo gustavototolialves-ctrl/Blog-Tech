@@ -1,0 +1,39 @@
+BLOG-TECH COM REAÇÕES COMPARTILHADAS
+
+ARQUIVOS
+- index.html: estrutura do blog e botões de reação.
+- style.css: visual e responsividade.
+- script.js: funcionamento dos botões e conexão com o Supabase.
+- supabase-setup.sql: cria a tabela e as permissões para as reações.
+- imagens/: coloque aqui as cinco imagens originais do seu blog.
+
+IMPORTANTE SOBRE AS IMAGENS
+Este pacote contém o código atualizado, mas não contém as cinco fotos originais que você enviou no projeto anterior.
+Copie os arquivos de imagem da pasta imagens do seu projeto antigo para esta pasta imagens, mantendo exatamente estes nomes:
+- inteligencia-artificial.jpg
+- cerebro-digital.jpg
+- realidade-virtual.jpg
+- robotica.jpg
+- ia-humanoide.jpg
+
+CONFIGURAR AS REAÇÕES COMPARTILHADAS
+As reações compartilhadas precisam de um projeto Supabase configurado. Só o ZIP não consegue ativar o banco automaticamente.
+
+1. No painel do Supabase, abra SQL Editor e crie uma consulta.
+2. Abra o arquivo supabase-setup.sql, copie todo o conteúdo e execute no Supabase.
+3. No Supabase, abra Project Settings > API.
+4. Copie a Project URL e a chave anon/public (NÃO copie a service_role).
+5. Abra script.js e substitua:
+   COLE_AQUI_SUA_PROJECT_URL
+   COLE_AQUI_SUA_ANON_PUBLIC_KEY
+   pelos valores do seu projeto.
+6. Salve os arquivos e teste pelo Live Server.
+7. Quando estiver tudo funcionando, envie os arquivos atualizados ao GitHub para publicar.
+
+SEGURANÇA
+- Nunca coloque senha do banco ou chave service_role no HTML/JavaScript.
+- A chave anon/public é feita para uso no navegador, com as políticas RLS do SQL.
+- O controle de um voto por artigo neste exemplo usa o navegador do visitante. Isso reduz votos repetidos no mesmo navegador, mas não impede alguém de votar novamente usando outro navegador ou apagando os dados locais.
+
+PUBLICAÇÃO
+Envie o conteúdo desta pasta para o repositório GitHub, mantendo index.html na raiz e a pasta imagens com as fotos dentro dela.
